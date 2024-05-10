@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ani</title>
+
+    <style>
+        body{
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .main{
+            border: 1px solid white;
+            width: 300px;
+            height: 300px;
+            position: relative;
+            cursor: pointer;
+            border-radius: 10px;
+            animation:  animate 2s linear infinite;
+
+
+        }
+        /* .main::before{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            background-color: white;
+           
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px 5px white;
+            content: "";
+
+        } */
+        .main:hover{
+            width: 30px;
+            height: 300px;
+            box-shadow: 0px 0px 5px 5px white;
+            
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+  <div class="main">
+     <div class="box"></div>
+  </div>  
+</body>
+</html>

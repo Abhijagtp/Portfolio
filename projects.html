@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+                
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+        body{
+            background-color:black;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 12px;
+           
+        }
+        h1{
+            text-align: center;
+            color: #CD7F32;
+            padding-top: 10px;
+        }
+        .container{
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            width: 100%;
+            height:92vh ;
+        }
+        .box{
+            height: 400px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: start;
+        }
+
+        .main{
+            border: 1px solid rgb(61, 60, 60);
+            width: 80px;
+            border-radius: .75rem;
+            background-size: cover;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 30px;
+            margin: 0 10px;
+            display: flex;
+            align-items: flex-end;
+            transition: .6s cubic-bezier(.28,-0.03,0,.99);
+            box-shadow: 0px 0px 25px -6px rgba(177, 177, 177, 0.8);
+        }
+        
+        .main > .content{
+            color: white;
+            display: flex;
+            flex-wrap: nowrap;
+            /* border: 2px solid blue; */
+
+        }
+        .main > .content > .icon{
+            border: 1px solid black;
+            background-image: linear-gradient(#91A6FF,#FFFFFF);
+            color: black;
+            border-radius: 50%;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px;
+            /* font-weight:1000000; */
+        }
+        .main > .content > .description {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            overflow: hidden;
+            height: 80px;
+            width: 520px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition-delay: .3s;
+            transition: all .3s ease;
+        } 
+        .description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+
+
+.main[for="c1"] {
+    background-image: url(images/sp\ background.jpg);
+}  
+.main[for="c2"] {
+    background-image: url(images/msback.jpg);
+}  
+.main[for="c3"] {
+    background-image: url(images/sp\ background.jpg);
+}
+
+a{
+    color: whitesmoke;
+
+}
+
+
+        
+    </style>
+</head>
+<body>
+    <h1>Projects</h1>
+    <div class="container">
+        <div class="box">
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="main">
+             <div class="content">
+                    <div class="icon">1</div>
+                        <div class="description">
+                            <h4><a href="https://github.com/Abhijagtp/social-platform-analysis-social-buzz-" target="_blank">Social Platform analysis (SQL)</a></h4>
+                            <p>Project aims to provide comprehensive insights 
+                                into user behaviour, engagement, and content interaction on a social media 
+                                platform.</p>
+                        </div>   
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c2">
+                     <label for="c2" class="main">
+            <div class="content" >
+                    <div class="icon">2</div>
+                        <div class="description">
+                        <h4><a href="https://github.com/Abhijagtp/Music-store-analysis">Music store analysis (SQL)</a></h4>
+                        <p>The Music Store Analysis project is a comprehensive exploration of a music store's database, utilizing PostgreSQL for data analysis.</p>
+                        </div>   
+            </div>
+        </label>
+        <input type="radio" name="slide" id="c3">
+        <label for="c3" class="main">
+            <div class="content" class="main">
+                    <div class="icon">2</div>
+                        <div class="description">
+                        <h4>Social Platform analysis (SQL)</h4>
+                        <p>analysis of a social platform socialbuzz using sql</p>
+                        </div>   
+            </div>
+        </label>
+        
+           
+        </div>
+    </div>
+</body>
+</html>

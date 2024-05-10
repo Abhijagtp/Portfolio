@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body{
+            background-color:black;
+            
+            padding-right: 15px;
+            padding-top: 12px;
+        }
+        .img   {
+            /* border: 1px solid red; */
+            width: 30%;
+            height:650px;
+            padding-top:19px;
+            float: left;
+            animation: slideright  4s ease forwards ;
+        }
+        @keyframes slideright  {
+            0% { transform: translate(-100px);}
+            100% { transform: translate(0);}
+        }
+        #img  {
+            height: 100%;
+            image-rendering: pixelated;
+            image-resolution: 1080;
+        }
+        .contact {
+            /* border: 2px solid green; */
+            width: 60%;
+            height: 650px;
+            display: inline-block;
+            margin-left: 90px;
+        }
+        .heading  { 
+            color: #CD7F32;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .details {
+            margin-top: 60px;
+        }
+        #number, #name, #email{
+            height: 30px;
+            width: 70%;
+            margin-left: 135px;
+        }
+        #address{
+           
+            width: 70%;
+            margin-left: 135px;
+            height: 50px;
+           
+        }
+        #submit{
+            width: 71%;
+            margin-left: 135px;
+            height: 30px;
+            background-image:linear-gradient(#91A6FF,#FFFFFF);
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: none;
+            border-radius:10px;
+        }
+        #submit:hover{
+            background-color:aqua;
+            cursor:pointer;
+        }
+        .addtext{color: white;
+        /* border: 1px solid red; */
+        width: 130px;
+       margin-left: 110px;
+       float: left;
+       font-family: 'Courier New', Courier, monospace;
+       font-size: 13px;
+
+        }
+        .add{margin-left: 130px;
+            
+            width: 50px;
+            height: 30px;
+            /* border: 1px solid gold; */
+            
+        }
+        .main{
+            /* border: 1px solid green; */
+        height:120px;
+        width:250px;
+        float: left;
+       
+        }
+        .main2{
+            /* border: 1px solid green; */
+            display: inline;
+            width: 300Px;
+            height: 120px;
+            float: left;
+            
+        }
+        .phone{
+            /* border: 1px solid red; */
+             display: inline;
+            width: 80px;
+            height: 50px;  
+            float: left;
+            margin-left: 180px; 
+               
+        }
+        .phonetext{
+             /* border: 1px solid yellow; */
+        color: white;
+        margin-left:130px;
+        width: 150px;
+        height: 30px;
+        float: left;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+       font-size: 13px;
+       margin-top: 6px;
+       
+        
+        
+        }
+        .main3 {
+            /* border: 1 px solid green; */
+            display: inline;
+            width: 250px;
+            
+        }
+        .mail{
+            /* border: 1px solid red; */
+            display: inline;
+            width: 500px;
+            height: 50px;
+            margin-left: 200px;
+        }
+
+        .mailtext{
+            /* border: 1px solid green; */
+            width: 100px;
+            height: 60px;
+            color: white;
+            margin-left: 680px;
+            font-family: 'Courier New', Courier, monospace;
+       font-size: 13px;
+       
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="img"> <img src="images/contact.png" alt="" id="img"></div>
+    <div class="contact">
+        <div class="heading">
+            <h1>GET IN TOUCH</h1>
+        </div>
+        <form action="" method="post">
+            <div class="details">
+                <input type="text" name="name" id="name" placeholder="Enter Full Name" required><br> <br><br>
+                <input type="text" name="email" id="email" placeholder="Enter email" required><br> <br><br>
+                <input type="text" name="phone-number" id="number" placeholder="Enter your number" required><br><br><br>
+                <input type="text" name="address" id="address"  placeholder="Enter your address"><br> <br>  <br>
+                <input type="submit" value="SUBMIT" id="submit">
+            </div>
+        </form> <br>
+        <br>
+        <div class="container">
+           <div class="main"> <div class="add"><img src="images/address.png" alt=""></div><br>
+            <div class="addtext"><p>Bhandup - west, Mumbai-400078,
+                Maharashtra</p></div>
+            </div>
+            
+            <div class="main2"> 
+                 <div class="phone"><img src="images/phone.png" alt=""></div><br> <br>
+            <div class="phonetext"><p>+91 8779774921</p></div>
+            </div>
+            
+            <div class="main3"> 
+            <div class="mail"><img src="images/mail.png" alt=""></div> <br>
+           <div class="mailtext"><p>abhijagtap1123@gmail.com</p></div>
+           </div>
+                                
+        </div>
+        
+
+
+    </div>
+   
+    
+</body>
+</html>
